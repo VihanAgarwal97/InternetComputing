@@ -1,0 +1,51 @@
+/*For the image on the top*/
+img {
+	width: 5%;
+	border: 2px black;
+	border-style: ridge;
+	display: block;
+	margin: auto;
+}
+
+img:hover{
+	width:15%;
+}
+
+/*Alex Smith*/
+h1 {
+	text-align: center;
+	font-weight: 100;
+	margin-top: 5px;
+}
+
+/*Main Headers: Profile, Education, Related Experience*/
+h2 {
+	font-weight: 100;
+	margin: 1px;
+	padding: 1px;
+}
+
+/*Sub Headers: Titles of each achievement*/
+h3 {
+	font-size: 15px;
+	font-weight: 100;
+	text-decoration: underline;
+}
+
+/*Institution where achievement took place*/
+h3 + p{
+	font-style:italic;
+	
+}
+
+/*For the lists*/
+ul {
+	margin-left: 5px;
+	padding-left: 8px;
+}
+/*For the entire page*/
+body {
+	background-color: rgb(65,105,225);
+	font-family: Verdana, sans-serif;
+	color: rgb(32,32,32);
+}

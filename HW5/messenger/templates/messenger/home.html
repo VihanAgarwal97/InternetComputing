@@ -1,0 +1,11 @@
+{% extends 'messenger/base.html' %}
+
+{% block content %}
+  <h2 class="text-center">Welcome, {{ user.username }}!</h2>
+  <div class="text-center">
+	  <a class="btn btn-primary pull-center" href="{% url 'create' %}"> NEW MESSAGE </a>
+	  <a class="btn btn-primary pull-center" href="{% url 'inbox' %}"> INBOX </a>
+	  <a class="btn btn-primary pull-center" href="{% url 'sent' %}"> SENT </a>
+	  <a class="btn btn-primary pull-center" href="{% url 'drafts' %}"> DRAFTS </a>
+  </div>
+{% endblock %}

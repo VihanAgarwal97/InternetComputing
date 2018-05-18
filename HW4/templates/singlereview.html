@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><- Review -></title>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/static/singlepagestyle.css">
+</head>
+<body>
+	<h1> {{movie.title}} </h1>
+	<p> {{movie.text}}</p>
+	<span>
+	{% for i in range(movie.rating) %}
+	&bigstar;
+	{% endfor %} 
+	</span>
+	<a href="/"> back to reviews...</a>
+</body>
+</html>

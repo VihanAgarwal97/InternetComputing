@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ALL BLOGS</title>
+</head>
+<body>
+	<h2> List of All Blogs</h2>
+{% if post_list %}
+    <ul>
+    {% for post in post_list %}
+        <li><a href="/blog/{{ post.id }}/">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No posts are available.</p>
+{% endif %}
+</body>
+</html>

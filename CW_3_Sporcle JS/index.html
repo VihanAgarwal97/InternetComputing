@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sporkle</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+    <div class="mainpage">    
+        <div id="instructions">
+            <h2> How much beer do you drink?</h2>
+            <p> Try to guess as many beers as you can. If it is in the list it will show up as an entry in the table. If not, try again!</p>
+        </div>
+        
+        <div class="toolbar">    
+            <div class="start">
+                <button onclick= "start()" id="start">Start</button>
+            </div>
+            <div class="prompt">
+                <label for="promptbox">Guess: </label>
+                <input type="text" id="promptbox" disabled oninput="checkWord()">
+            </div>
+            <div class="score">
+                <label> Score:</label>
+                <label id="score"></label>
+                <label> /10 </label>
+            </div>
+        </div>
+        
+        <hr style="background:#000000; border:0; height:7px" />
+        
+        <div class="table">
+            <table id="answerTable" border="2px">
+                <tr>
+                    <td>1</td>
+                    <td class="answer" id="corona">Corona</td>
+                </tr>
+                 <tr>
+                    <td>2</td>
+                    <td class="answer" id="hams">Hams</td>
+                </tr>
+                 <tr>
+                    <td>3</td>
+                    <td class="answer" id="coors">Coors</td>
+                </tr>
+                 <tr>
+                    <td>4</td>
+                    <td class="answer" id="budweiser">Budweiser</td>
+                </tr>
+                 <tr>
+                    <td>5</td>
+                    <td class="answer" id="rollingrock">Rolling Rock</td>
+                </tr>
+                 <tr>
+                    <td>6</td>
+                    <td class="answer" id="heineken">Heineken</td>
+                </tr>
+                 <tr>
+                    <td>7</td>
+                    <td class="answer" id="budlight">Bud Light</td>
+                </tr>
+                 <tr>
+                    <td>8</td>
+                    <td class="answer" id="bluemoon">Blue Moon</td>
+                </tr>
+                 <tr>
+                    <td>9</td>
+                    <td class="answer" id="yuengling">Yuengling</td>
+                </tr>
+                 <tr>
+                    <td>10</td>
+                    <td class="answer" id="millerlite">Miller Lite</td>
+                </tr>
+            </table>
+        </div>
+        <div class="winbar">
+            <h1 id="win"> You Win!</h1>
+            <h1 id="time"> 0 </h1>
+        </div>
+    </div>
+    </body>
+    
+</html>

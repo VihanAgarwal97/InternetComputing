@@ -1,0 +1,11 @@
+{% extends 'messenger/base.html' %}
+
+{% block content%}
+<h2 class="text-center" style="display:inline-block;"> INBOX </h2>
+<a class="pull-right btn btn-primary" href="/">BACK TO HOME</a>
+<hr>
+{% for msg in msgs%}
+<label>FROM : {{msg.author.username}}</label>
+<p> {{msg.text}} </p>
+{% endfor %}
+{% endblock %}

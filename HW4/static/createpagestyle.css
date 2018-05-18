@@ -1,0 +1,44 @@
+* {
+		font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	background: #FCD116;
+}
+
+
+h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+form {
+	text-align:center;
+}
+
+#titleinp {
+	font-size: 24px;
+	width:30%;
+	margin-bottom: 20px;
+}
+
+textarea {
+	font-size: 18px;
+}
+
+#ratinginp {
+	font-size: 18px;
+	width:15%;
+	margin-bottom: 20px;
+}
+
+label {
+	font-size: 24px;
+}
+
+button {
+	font-size: 24px;
+	margin-left: 4rem;
+	background: black;
+	color: white;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+
+<body>
+		<form method="POST" action="{{request.path}}">
+		{% for item in ['first','last','town','year'] %}
+			{% if item == "year"%}
+			<input type="number" placeholder="{{item}}" max=2019 min=2005 name="{{item}}">
+			{% else %}
+			<input type="text" placeholder= "{{item}}" name="{{item}}">
+			{% endif %}
+
+		{% endfor %}
+
+			<button type="submit">Submit</button>
+		
+		</form>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{% extends 'messenger/base.html' %}
+
+{% block content%}
+<h2 class="text-center" style="display:inline-block;"> DRAFTS </h2>
+<a class="pull-right btn btn-primary" href="/">BACK TO HOME</a>
+<hr>
+{% for msg in msgs%}
+<label>TO : {{msg.receiver.username}}</label>
+<p> {{msg.text}} </p>
+<a href="/edit/{{msg.id}}/"> Edit </a>
+<hr>
+{% endfor %}
+{% endblock %}

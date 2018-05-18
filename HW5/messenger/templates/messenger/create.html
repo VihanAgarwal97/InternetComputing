@@ -1,0 +1,26 @@
+{% extends 'messenger/base.html' %}
+
+{% block content %}
+<h2 class="text-center" style="display:inline-block;"> MESSAGE </h2>
+<a class="pull-right btn btn-primary" href="/">BACK TO HOME</a>
+<form method="POST" class="text-center"> {% csrf_token %}
+	<div class="form-group">
+		<label>Enter Message</label>
+		<textarea name="msg" class="form-control" placeholder="Enter the message here">{{msg.text}}</textarea>
+	</div>
+	<div class="form-group">
+	<label>Send To</label>
+	<select name="sendto" class="form-control">
+		{% for user in userList%}
+		{% if msg.receiver == user %}
+		<option selected value="{{user.id}}">{{user.username}}</option>
+		{% else %}		
+		<option value="{{user.id}}">{{user.username}}</option>
+		{% endif %}
+		{% endfor %}
+	</select>
+	</div>
+	<button type="submit" name="action" value="send" class="btn btn-primary">SEND</button>
+	<button type="submit" name="action" value="save" class="btn btn-primary">SAVE</button>
+</form>
+{% endblock %}

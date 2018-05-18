@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hidden Tabs</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    </head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <body>
+        <div class="main_header">
+            <h1 id="main_head"> Hidden Tabs </h1>
+            <input id="prompt_box" type="text" oninput="controller()" placeholder="Enter the tab you want">    
+        </div>
+        
+        
+        <div class="toolbar" id="toolbardiv">
+            <span class="tab_headers" id="tab1span">
+                <h2 id="tab_1">pictures</h2>
+
+            </span>
+            <span class="tab_headers" id="tab2span">
+                <h2 id="tab_1">text</h2>
+            </span>
+            <span class="tab_headers" id="tab3span">    
+                <h2 id="tab_3>">misc</h2>
+            </span>
+        </div>
+        
+        
+        <div class="contentholder" id="content1div">
+            <span class="content" id="tab1content">
+                <img src="resources/bird.jpg" id="mainimg">
+            </span>
+            <div class="toolbar" id="picbardiv">
+                <span class="toolpics">
+                    <img src="resources/beer.jpg" class="toolimg" id="pic1">
+                </span>
+                <span class="toolpics">
+                    <img src="resources/cheese.jpg" class="toolimg" id="pic2">
+                </span>
+                <span class="toolpics">
+                    <img src="resources/bird.jpg" class="toolimg" id="pic3">
+                </span>
+                <span class="toolpics">
+                    <img src="resources/zucchini.jpg" class="toolimg" id="pic4">
+                </span>
+                <span class="toolpics">
+                    <img src="resources/mahal.jpg" class="toolimg" id="pic5">
+                </span>
+                <span class="toolpics">
+                    <img src="resources/duck.jpg" class="toolimg" id="pic6">
+                </span>
+                <span class="toolpics">
+                    <img src="resources/yinyang.jpg" class="toolimg" id="pic7">
+                </span>
+                <span class="toolpics">
+                    <img src="resources/goat.jpg" class="toolimg" id="pic8">
+                </span>
+              
+            </div>
+        </div>
+        
+        <div class="contentholder" id="content2div">
+            <span class="content" id="tab2content">
+                <ul>
+                    <li class="listheader">Random word content 1:</li>
+                    <p id="text1" class="editabletext"> Supported neglected met she therefore unwilling discovery remainder. Way sentiments two indulgence uncommonly own. Diminution to frequently sentiments he connection continuing indulgence. An my exquisite conveying up defective. Shameless see the tolerably how continued. She enable men twenty elinor points appear. Whose merry ten yet was men seven ought balls. </p>
+                    <li class="listheader">Random word content 2:</li>
+                    <p id="text2" class="editabletext"> Arrived totally in as between private. Favour of so as on pretty though elinor direct. Reasonable estimating be alteration we themselves entreaties me of reasonably. Direct wished so be expect polite valley. Whose asked stand it sense no spoil to. Prudent you too his conduct feeling limited and. Side he lose paid as hope so face upon be. Goodness did suitable learning put. </p>
+                    <li class="listheader">Random word content 3:</li>
+                    <p id="text3" class="editabletext"> Among going manor who did. Do ye is celebrated it sympathize considered. May ecstatic did surprise elegance the ignorant age. Own her miss cold last. It so numerous if he outlived disposal. How but sons mrs lady when. Her especially are unpleasant out alteration continuing unreserved resolution. Hence hopes noisy may china fully and. Am it regard stairs branch thirty length afford.  </p>
+                </ul>
+                <textarea id="editor" rows="10" cols="35" disabled>Click a random word content to edit</textarea>
+            </span>
+        
+        </div>
+        
+        <div class="contentholder" id="content3div">
+            <span class="content" id="tab3content">
+                <ul>
+                    <li class="listheader">Design Principles</li>
+                    <p id="text1" class="text"> The three design principles I focussed on were: Navigability, Simplicity, Visual Heirachy and Consistency. The design for each tab is consistent. I am only using 3 colors besides black whcih adds to the simplicity. There is a clear heirachy at the code level as well as UX level. It is easy to navigate tabs with the input box</p>
+                    <li class="listheader">What I like about my website?</li>
+                    <p id="text2" class="text"> I like the use of a text box as a navigator. I hope to implement this in the future with greater flexibility and accesibility </p>
+                    <li class="listheader">What I don't like about my website?</li>
+                    <p id="text3" class="text"> I consider it only "psuedo-responsive". There are parts of my stylesheet where I have had to pick values by trial and error rather than by screen size.</p>
+                    
+                </ul>
+            </span>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="app.js"></script>
+</html>

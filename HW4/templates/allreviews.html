@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><- Movie Reviews -></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<script type="text/javascript" src="/static/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/main.css">
+</head>
+<body>
+	<h1> WELCOME TO MY MOVIE REVIEW WEBSITE!</h1>
+	<a id="create" href="/create"> CREATE A NEW REVIEW</a>
+	<table border="2" id="maintable">
+		<thead>
+			<tr>
+				<th class="titlehead">TITLE</th>
+				<th class="ratinghead">RATING</th>
+				<th> </th>
+				<th> </th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for movie in movies %}
+		<tr data-id={{movie.id}}>
+			<td class="title"><a href="/review?id={{movie.id}}">{{movie.title}}</a></td>
+			<td>{% for i in range(movie.rating) %}
+				&bigstar;
+				{% endfor %}
+			</td>
+			<td><a class="editbutton" href="/edit?id={{movie.id}}">EDIT</a></td>	
+			<td><button class="delbutton" data-id="{{movie.id}}">DELETE</button></td>
+		</tr>
+		{% endfor %}
+		</tbody>	
+	</table>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+
+<body>
+		
+	<table>
+		<thead>
+			<tr>
+				<th>Key</th>
+				<th>Value</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for key, val in my_args.items() %}
+			<tr>
+			<th>{{key}}</th>
+			<th>{{val}}</th>
+			</tr>
+		{% endfor %}
+		</tbody>	</table>
+</body>
+
+</html>

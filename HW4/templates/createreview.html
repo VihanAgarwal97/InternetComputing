@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Create/Edit Review</title>
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/createpagestyle.css">
+	</head>
+	<body>
+		<h1> Create or Edit a New Review </h1>
+		
+		<form name="mainform" method="POST">
+
+			<label for="titleinp"> Title </label>
+			<input name="title" id="titleinp" type="text" value="{{movie.title}}"/>
+			<br>
+
+			<label for="reviewinp" > Review </label>
+			<textarea name="review" id="reviewinp" style="width:300px; height:100px;" placeholder="Enter A Brief Review of the Movie Here....">{{movie.text}}</textarea>
+			<br>
+
+			<label for="ratinginp"> Rating </label>
+			<input name="rating" id="ratinginp" type="number" value="{{movie.rating}}"/>
+			<br>
+
+			<button type="submit"> CREATE/EDIT REVIEW </button>
+		</form>
+	</body>
+</html>

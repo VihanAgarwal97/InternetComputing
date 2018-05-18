@@ -1,0 +1,119 @@
+#main_head{
+    margin-left:auto;
+    margin-right: auto;
+    width:9em;
+    padding:10px;
+    padding-left:4em;
+    background-color:#CC527A;
+    border-style:groove;
+    border-color: #CC527A;
+    
+}
+#prompt_box{
+    margin-left:auto;
+    margin-right: auto;   
+    display: block;
+    font:inherit;
+    font-weight: bold;
+    background-color: #363636;
+    border-color: #363636;
+    margin-bottom:10px;
+}
+
+.tab_headers{
+    display:inline-block;
+    position:relative;
+    padding: .1em;
+    padding-right:15px;
+    padding-left:15px;
+    margin-left: .2em;
+    margin-right: .2em;
+}
+
+#toolbardiv{
+    text-align: center;
+}
+
+#tab3span{
+    float:right;
+}
+#tab2span{
+    
+}
+#tab1span{
+    float:left;
+}
+
+#mainimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content{
+    display: block;
+    width:100%;
+}   
+
+.toolimg{
+    width: 10%;
+}
+
+#picbardiv{
+    text-align: center;
+}
+
+.contentholder{
+    position: absolute;
+}
+
+.editabletext{
+    font-size:20px;
+    text-align: justify;
+    margin-right: 1em;
+}
+.listheader{
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+
+.text{
+    font-size:20px;
+    text-align: center;
+    margin-right: 1em;
+}
+
+#editor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    width:90%;
+    resize:none;
+}
+
+#content1div{
+    visibility: hidden;
+}
+
+#content2div{
+    visibility: hidden;
+}
+
+#content3div{
+    visibility: hidden;
+}
+
+body{
+    font-family: 'Comfortaa', cursive;
+    background-color: #474747;
+}
+
+
+
+
+

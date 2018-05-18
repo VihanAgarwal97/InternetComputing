@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pic Page</title>
+</head>
+<body>
+	<form method="POST" action="/pic" enctype="multipart/form-data">
+		{% if dl_link %}
+		<a href="{{dl_link}}">Download</a>
+		{% endif %}
+		<input type="file" name="photo">
+		<button type="submit">Upload</button>
+	</form>
+		
+
+</body>
+</html>
